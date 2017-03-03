@@ -1,0 +1,219 @@
+body {
+  margin:0px;
+  padding:0px;
+}
+p{
+  margin:0px;
+}
+
+
+.team-container-wrapper {
+    margin-top: 27px;
+}
+
+.team-container-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    margin-bottom: 0px;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.team__logo {
+    width: 53px;
+    /* -webkit-filter: grayscale(100%); */
+    /* filter: grayscale(100%); */
+    /* transition: -webkit-filter 250ms; */
+    /* transition: filter 250ms; */
+    /* transition: filter 250ms,-webkit-filter 250ms; */
+    height: 53px;
+}
+
+.team__logo:hover{
+  /*-webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  border: 1px dashed #2a2a2a;*/
+}
+
+
+.team-container-row-team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* width: 100px; */
+    margin-right: 10px;
+}
+
+.team__text {line-height: 58px;font-family: "Whitney SSm A", "Whitney SSm B";font-size: 12px;font-weight: 600;display: none;}
+
+.team-container-row-breakdown {
+    width: 440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 20px;
+    margin-top: 9px;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+
+.team-container-row-count {
+    font-family: "Whitney SSm A", "Whitney SSm B";
+    font-weight: 600;
+    font-size: 12px;
+    text-align: right;
+    line-height: 17px;
+    position: absolute;
+    width: 210px;
+    top: 22px;
+}
+
+.team-container-row-breakdown-col {
+    position: relative;
+    z-index: 0;
+    overflow: visible;
+}
+
+
+.team-container-row-percent {
+    font-family: "Whitney SSm A", "Whitney SSm B";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    z-index: 100000;
+    position: absolute;
+    padding-left: 5px;
+}
+
+.team-container {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.team-container-title-container{font-size: 18px;font-family: "Whitney SSm A", "Whitney SSm B";margin-bottom: 0px;border-bottom: 1px solid #8e97a7;padding-bottom: 10px;}
+
+.team-container-title-big {
+    font-family: "Whitney SSm A", "Whitney SSm B";
+    color: black;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.team-container-title-sub {
+    margin: 0px;
+    font-size: 14px;
+    letter-spacing: -.3px;
+    font-weight: 400;
+    margin-right: 10px;
+    line-height: 30px;
+}
+
+.team-container-title-sub{
+  margin: 0px;
+  font-size: 14px;
+  letter-spacing: -.3px;
+  font-weight: 400;
+  margin-right: 10px;
+  line-height: 30px;
+}
+
+.team-container-title-date-drop{
+  margin-top: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+  cursor: hand;
+}
+.team-container-title-drop-item{
+  color: black;
+}
+.team-container-title-sub-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.team-container-embed-text{
+  font-family: "Whitney SSm A", "Whitney SSm B";
+  color: #777777;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.team-container-embed{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.team-container-embed-left{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.team-container-embed-right{
+  font-family: "Whitney SSm A", "Whitney SSm B";
+  color: #777777;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.team-container-embed-right a{color: black;font-weight: 600;text-transform: uppercase;font-size: 14px;text-decoration: none;transition: color 1s;}
+
+.team-container-embed-right a:hover{
+  color: red;
+}
+
+.team-container-embed-input{margin-top: -3px;margin-left: 6px;}
+
+
+@media only screen and (max-width: 640px) {
+  .team-container-embed{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .team-container-embed-right{
+    width: 100%;
+    text-align: center;
+  }
+  .team-container-embed-left{
+    width:100%;
+    margin-bottom: 8px;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .team-container-row-count{font-size: 11px;}
+  .team-container{
+    overflow: hidden;
+  }
+  .team-container-title-container{width: 95%;margin: 0 auto;}
+  .team-container-row{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #9ca4b2;
+    padding-bottom: 22px;
+  }
+  .team-container-title-sub{
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  .team-container-row-breakdown{
+    width: auto;
+  }
+  .team-container-row-count-away{top: 39px;}
+}
+
+}

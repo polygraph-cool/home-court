@@ -1,0 +1,254 @@
+body {
+  margin:0px;
+  padding:0px;
+}
+p{
+  margin:0px;
+}
+
+.call-container-title-container {font-size: 18px;font-family: "Whitney SSm A", "Whitney SSm B";margin-bottom: 0px;border-bottom: 1px solid #8e97a7;padding-bottom: 10px;}
+
+.call-container-title-big {
+    font-family: "Whitney SSm A", "Whitney SSm B";
+    color: black;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.call-container-title-sub {
+    margin: 0px;
+    font-size: 14px;
+    letter-spacing: -.3px;
+    font-weight: 400;
+    margin-right: 10px;
+    line-height: 30px;
+}
+
+.call-container {
+    max-width: 640px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.call-container-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.call-container-row-label {
+    font-family: "Whitney SSm A", "Whitney SSm B";
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.call-container-wrapper {
+    margin-top: 27px;
+}
+
+.call-container-row-home {
+    font-size: 13px;
+    font-family: "Whitney SSm A", "Whitney SSm B";
+}
+
+.call-container-row-count {
+    font-family: "Whitney SSm A", "Whitney SSm B";
+}
+
+.call-container-row-count {
+    /* padding: 0px 10px; */
+    font-family: "Whitney SSm A", "Whitney SSm B";
+    font-weight: 600;
+    font-size: 11px;
+    width: 130px;
+    line-height: 40px;
+    position: absolute;
+    color: black;
+    top: 32px;
+}
+
+.call-container-row-advantage {
+    font-family: "Whitney SSm A", "Whitney SSm B";
+    font-weight: 600;
+    font-size: 13px;
+    width: 100px;
+    background: #00ff25;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+
+.call-container-row-label span {
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+
+.call-container-row-count-wrapper {
+    position: relative;
+    background: blue;
+    height: 40px;
+}
+
+
+.call-container-row-count-away {
+    right: 0px;
+    text-align: right;
+    top: 31px;
+}
+
+.call-container-row-percent {
+    font-family: "Whitney SSm A", "Whitney SSm B";
+    font-weight: 500;
+    font-size: 13px;
+    width: 130px;
+    line-height: 40px;
+    position: absolute;
+    color: black;
+    right: 0px;
+}
+
+.call-container-row-percent span {
+    font-weight: 700;
+}
+
+.call-container-row-percent-away {
+    position: absolute;
+    left: 0px;
+    padding-left: 10px;
+}
+
+.call-container-row-label .big {
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 5px;
+    /* text-transform: capitalize; */
+}
+
+.call-container-row-label .small {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.call-container-title-sub-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.call-container-title-drop-item {
+    color: black;
+}
+
+.call-container-title-drop {
+    cursor: pointer;
+    cursor: hand;
+    margin-top: 6px;
+}
+
+.call-container-title-end {
+    margin: 0px;
+    font-size: 14px;
+    letter-spacing: -.3px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.call-container-row-count-wrapper {
+    position: relative;
+}
+
+.call-container-row-count span {
+    font-weight: 900;
+}
+
+.call-container-row-percent-home {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.call-container-title-date-drop {
+    margin-top: 6px;
+    margin-right: 10px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.call-container-embed-text{
+  font-family: "Whitney SSm A", "Whitney SSm B";
+  color: #777777;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.call-container-embed{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.call-container-embed-left{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.call-container-embed-right{
+  font-family: "Whitney SSm A", "Whitney SSm B";
+  color: #777777;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.call-container-embed-right a{color: black;font-weight: 600;text-transform: uppercase;font-size: 14px;text-decoration: none;transition: color 1s;}
+
+.call-container-embed-right a:hover{
+  color: red;
+}
+
+.call-container-embed-input{margin-top: -3px;margin-left: 6px;}
+
+@media only screen and (max-width: 640px) {
+  .call-container-embed{
+    width: 95%;
+    margin: 0 auto;
+  }
+  .call-container-embed-right{
+    width: 100%;
+    text-align: center;
+  }
+  .call-container-embed-left{
+    width:100%;
+    margin-bottom: 8px;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .call-container-row-percent{font-size: 10px;}
+  .call-container-row{/* width: 80%; *//* margin: 0 auto; */}
+  .call-container-title-end{
+    display: none;
+  }
+  .by-line{
+    width: auto;
+  }
+  .call-container{overflow: hidden;}
+  .call-container-title-container{width: 95%;margin: 0 auto;margin-bottom: 20px;}
+  .call-container-wrapper{width: 95%;margin: 0 auto;}
+}
