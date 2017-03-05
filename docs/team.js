@@ -14,11 +14,32 @@
 
   function setupChart() {
 
+    var realCallType = d3.nest().key(function (d) {
+      return d.home;
+    }).rollup(function (values) {
+      var home = values.filter(function (v) {
+        return v.review_decision === 'INC' &&
+        v.committing_team === v.home ||
+        v.review_decision === 'IC' &&
+        v.disadvantaged_team === v.home;
+      });
+
+      var away = values.filter(function (v) {
+        return v.review_decision === 'INC' &&
+        v.committing_team === v.away ||
+        v.review_decision === 'IC' &&
+        v.disadvantaged_team === v.away;
+      });
+
+      return { home: home, away: away };
+    }).entries(teams_data);
+    
     var callType = d3.nest().key(function(d){
         return d.home;
       })
       .key(function(v){
         var benefiting;
+        
         if(v.review_decision === 'INC' && v.committing_team === v.home || v.review_decision === 'IC' && v.disadvantaged_team === v.home){
           benefiting = 1;
         }
@@ -125,21 +146,22 @@
     var containerRow = container.append("div")
       .attr("class","team-container-wrapper")
       .selectAll("div")
-      .data(callType)
+      .data(realCallType)
       .enter()
       .append("div")
       .attr("class","team-container-row")
       .each(function(d){
-        var calcHome = d.values[0].values.filter(function(d){
+        console.log(d)
+        var calcHome = d.value.home.filter(function(d){
           return +d.date > dateLow && +d.date < dateHigh;
         });
 
-        var calcAway = d.values[1].values.filter(function(d){
+        var calcAway = d.value.away.filter(function(d){
           return +d.date > dateLow && +d.date < dateHigh;
         });
 
-        var home = d.values[0].values.length;
-        var away = d.values[1].values.length;;
+        var home = d.value.home.length;
+        var away = d.value.away.length;;
         d.home = home;
         d.away = away;
         d.percentSort = (home)/(home+away);
@@ -314,11 +336,11 @@
       var containerRow = container.selectAll('.team-container-row')
       
       containerRow.each(function(d){
-          var calcHome = d.values[0].values.filter(function(d){
+          var calcHome = d.value.home.filter(function(d){
             return +d.date > dateLow && +d.date < dateHigh;
           });
 
-          var calcAway = d.values[1].values.filter(function(d){
+          var calcAway = d.value.away.filter(function(d){
             return +d.date > dateLow && +d.date < dateHigh;
           });
 
